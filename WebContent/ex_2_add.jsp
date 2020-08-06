@@ -7,8 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>JSP CRUD Example</h1>  
-<a href="ex_1_addpage.jsp">Add User</a>  
-<a href="ex_1_view.jsp">View Users</a>
+
+<%@page import="third_dao.BookDao"%>  
+<jsp:useBean id="u" class="third.Book"></jsp:useBean>  
+<jsp:setProperty property="*" name="u"/>
+
+<%  
+BookDao.save(u);  
+response.sendRedirect("ex_2.jsp");
+%>
+
 </body>
 </html>

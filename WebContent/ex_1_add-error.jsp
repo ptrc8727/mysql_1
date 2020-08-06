@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>JSP CRUD Example</h1>  
-<a href="ex_1_addpage.jsp">Add User</a>  
-<a href="ex_1_view.jsp">View Users</a>
+
+<p>Sorry, an error occurred!</p>  
+<jsp:include page="ex_1_form.html"></jsp:include>
+
 </body>
 </html>
